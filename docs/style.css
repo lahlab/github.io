@@ -1,1 +1,4 @@
-body { background-color: "#301020"; color: "#e0d060"; margin: 0em; padding: 1em; }
+html { font-family: sans-serif; }
+body { background-color: #301020; color: #e0d060; margin: 0; padding: 0; }
+div { background-color: #180820; margin: 0.5em; padding: 0.5em; border 2px black }
+h1 { text-shadow: 3px 3px 1px black; }
