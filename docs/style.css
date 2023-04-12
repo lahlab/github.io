@@ -1,4 +1,11 @@
 html { font-family: sans-serif; }
-body { background-color: #301020; color: #e0d060; margin: 0; padding: 0; }
-div { background-color: #180820; margin: 0.5em; padding: 0.5em; border 2px black }
-h1 { text-shadow: 3px 3px 1px black; }
+title { font-size: 70%; text-align: center; color: #b0a040;}
+body { background-color: #281020; color: #e0d060; margin: 0; padding: 0; }
+body:first-child { margin-top: 0.08em; }
+div { background-color: #200820; margin: 0.5em; padding: 0.5em; border 2px black }
+div:first-child { margin-top: 0.08em; }
+@media screen and (min-width: 60em) {
+  div { width: 58em; align: center; } }
+h1 { text-shadow: 3px 3px 1px black; margin-top: 3em; margin-bottom: 1em; }
+h2 { text-shadow: 3px 3px 1px black; margin-top: 2.3em; margin-bottom: 1em; }
+h3 { text-shadow: 3px 3px 1px black; margin-top: 1.6em; margin-bottom: 1em; }
