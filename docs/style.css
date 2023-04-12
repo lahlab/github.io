@@ -1,13 +1,13 @@
 html { font-family: sans-serif; }
 titel { font-size: 0.7em; text-align: center; color: #b0a040; }
-body { background-color: #281020; color: #e0d060; margin: 0; padding: 0; align: center; }
-div { background-color: #200820; margin: 0.5em; padding: 0.5em; border 2px black; align: center; }
+body { background-color: #281020; color: #e0d060; padding: 0; align: center; }
+div { background-color: #200820; margin: 0.5em; padding: 0.5em; border 2px black; }
 body > *:first-child { margin-top: 0; }
 body > *:last-child { margin: 0; padding: 0.05em 0.5em; border 2px 0 0 0 black; }
 div > *:first-child { margin-top: 0; }
-div > *:last-child { margin-bottom: 0; }
+div > *:last-child { margin-bottom: 0; padding: 0.5em 0.5em; width: auto; }
 @media screen and (min-width: 30em) {
-  div { width: 28em; align: center; } }
+  div { width: 28em; } }
 h1 { text-shadow: 3px 3px 1px black; margin-top: 1.2em; margin-bottom: 0.4em; }
 h2 { text-shadow: 3px 3px 1px black; margin-top: 1.2em; margin-bottom: 0.4em; }
 h3 { text-shadow: 3px 3px 1px black; margin-top: 1.2em; margin-bottom: 0.4em; }
