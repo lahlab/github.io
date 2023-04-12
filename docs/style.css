@@ -1,13 +1,18 @@
 html { font-family: sans-serif; }
-titel { font-size: 0.7rem; text-align: center; color: #b0a040; }
-body { background-color: #281020; color: #e0d060; padding: 0; align: center; font-size: 1rem; }
-div { background-color: #200820; margin: 0.5rem; padding: 0.5rem; border 2px black; }
+titel { font-size: 0.7em; text-align: center; color: #b0a040; }
+body { background-color: #281c20; color: #f0e080; padding: 0; align: center; font-size: 1rem; }
+div { background-color: #201420; margin: 0.5em; padding: 0.5em; border 2px black; }
 body > *:first-child { margin-top: 0; }
-body > *:last-child { margin: 0; padding: 0.05rem 0.5rem; border 2px 0 0 0 black; }
+body > *:last-child { margin: 0; padding: 0.05em 0.5em; border 2px 0 black; width: auto; }
 div > *:first-child { margin-top: 0; }
-div > *:last-child { margin-bottom: 0; padding: 0.5rem 0.5rem; width: auto; }
-@media screen and (min-width: 36rem) {
-  div { width: 34rem; } }
-h1 { text-shadow: 3px 3px 1px black; margin-top: 2.4rem; margin-bottom: 0.3rem; }
-h2 { text-shadow: 3px 3px 1px black; margin-top: 1.6rem; margin-bottom: 0.3rem; }
-h3 { text-shadow: 3px 3px 1px black; margin-top: 1.0rem; margin-bottom: 0.3rem; }
+div > *:last-child { margin-bottom: 0; }
+@media screen and (min-width: 36em) {
+  div { width: 34em; } }
+h1 { text-shadow: 0.1em 0.1em 0.15em #040004; margin-top: 1em; margin-bottom: 0; }
+h2 { text-shadow: 0.1em 0.1em 0.15em #040004; margin-top: 1em; margin-bottom: 0; }
+h3 { text-shadow: 0.1em 0.1em 0.15em #040004; margin-top: 1em; margin-bottom: 0; }
+h1 + h2 { margin-top: 0.2em;
+h1 + h3 { margin-top: 0.2em;
+h2 + h3 { margin-top: 0.1em;
+p.ing { font-size: 1.1em; }
+p.ing::first-letter { float: left; margin: 0; padding: 0; font-size: 2em; font-weight: bold; color: #e09060; }
