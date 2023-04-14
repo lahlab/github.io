@@ -1,0 +1,29 @@
+html { font-family: sans-serif; margin-right: auto; margin-left: auto; }
+titel { font-size: 0.7em; color: #b0a040; margin-right: auto; margin-left: auto; }
+body { background-color: #481b18; color: #f0d0a0; padding: 0; margin: 0; font-size: 1.1em; }
+div { background-color: #2a1c2a; margin: 1.2%; padding: 0.5em 2.1%; border: 0.1em solid #040004; }
+body > *:last-child { margin: 0; padding: 0.3em 0.8em; border: 0 solid #040004; border-top: 0.1em solid #040004; width: auto; }
+div > *:first-child { margin-top: 0; }
+div > *:last-child { margin-bottom: 0; }
+div.foot > *:last-child { margin-bottom: 0.8em; }
+@media screen and (min-width: 37em) {
+  body > * { margin: 0.7em auto; }
+  body > div { width: 30em; margin: 0.7em auto; padding: 0.5em 0.8em; } }
+h1 { text-shadow: 0.1em 0.1em 0.1em #040004; margin-top: 1em; margin-bottom: 0; letter-spacing: 0.01em; word-spacing: 0.03em; }
+h2 { text-shadow: 0.1em 0.1em 0.1em #040004; margin-top: 1em; margin-bottom: 0; letter-spacing: 0.01em; word-spacing: 0.03em; }
+h3 { text-shadow: 0.1em 0.1em 0.1em #040004; margin-top: 1em; margin-bottom: 0; letter-spacing: 0.01em; word-spacing: 0.03em; }
+h1 + h2 { margin-top: 0; }
+h1 + h3 { margin-top: 0; }
+h2 + h3 { margin-top: 0.2em; }
+p { margin: 0.7em 0; padding: 0; line-height: 1.3; letter-spacing: 0.01em; word-spacing: 0.03em; }
+p.foot { text-align: center;}
+tt { font-size: 1.1em; color: #70e820 }
+*.out{ color: #ffa020; text-sshadow: 0.1em 0.1em 0.1em #040004; }
+a { text-decoration: none; color: #70a0ff; }
+a:visited { color: #9070b0; }
+a:hover { color: #a0c0ff; }
+a.rml { float: right; margin: 0; padding: 0 0.1em 0 0.4em; font-size: 2.5em; font-weight: bold; text-shadow: 0.1em 0.1em 0.1em #040004; line-height: 0.8; }
+a.foot { margin: 0 0.5em; padding: 0 0.5em; font-size: 2.3em; font-weight: bold; text-shadow: 0.1em 0.1em 0.1em #040004; line-height: 2; }
+p.ing { font-size: 1.1em; }
+p.ing::first-line { font-size: 1em; text-shadow: 0.1em 0.1em 0.1em #040004; }
+p.ing::first-letter { float: left; margin: 0; padding: 0 0.1em 0 0; font-size: 2.5em; font-weight: bold; color: #e09060; text-shadow: 0.1em 0.1em 0.1em #040004; line-height: 0.8; }
