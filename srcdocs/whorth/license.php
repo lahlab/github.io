@@ -17,18 +17,19 @@ if($honly) {
 }
 include "${lib}/head.php";
 ?>
-<div><h1><?=${self['headln']}?></h1>
+<div><h1><?=$self['headln']?></h1>
 <h3>WHORTH - The ugly duckling of FORTH</h3>
 
-<p class="ing"><?=${self['desc']}?></p>
+<p class="ing"><?=$self['desc']?></p>
 
 <p>Still up for sugestions.</p>
 
-<h2>Leading candidate: MPL 2.0</h2>
+<h3>Leading candidate: MPL 2.0</h3>
 
-<p>[Mozilla Public License (MPL) version 2.0](https://www.mozilla.org/en-US/MPL/2.0/) is the leading candidate for a license for WHORTH. It's not perfect but it might not get any better.</p>
+<p><a class="trml" title="Mozilla Public License (MPL) version 2.0"
+   href="https://www.mozilla.org/en-US/MPL/2.0/)">»</a>Mozilla Public License (MPL) version 2.0 is the leading candidate for a license for WHORTH. It's not perfect but it might not get any better.</p>
 
-<h2>Licensing goals</h2>
+<h3>Licensing goals</h3>
 
 <p>The mild copyleft is not only to protect all our freedom but in particular contributor from unfair competition. There's nothing to do about free riders but they are always one step behind. But if a competitor take a contributors code, improve it and compete with an edge over the contributor whose code they used - That is unfair and stuff that can hurt the spirit of sharing in an community.</p>
 
@@ -39,9 +40,9 @@ to fix).</p>
 
 <h2>Overthinking...</h2>
 
-<p>Probably I'm overthinking this. WHORTH has the goal to be a simple language, even a small team should be able to reimplement it from scratch quite fast making any licensing issues quite solvable.</p>
+<p class="ing">Probably I'm overthinking this. WHORTH has the goal to be a simple language, even a small team should be able to reimplement it from scratch quite fast making any licensing issues quite solvable.</p>
 
-<h2>Readline</h2>
+<h3>Readline</h3>
 
 <p>WHORTH currently use readline in python that may (depending on how Your python is compiled) be GPL code. That's no problem for now as WHORTH are only for play (it may bee no problem at all as there are alternative implementations - ask someone else). In the long run writing similar functionality in WHORTH is probably a good idea anyway to bring the functionality wherever WHORTH go.</p>
 </div><?php

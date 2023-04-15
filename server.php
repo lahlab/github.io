@@ -7,15 +7,6 @@ if(str_ends_with($s, '/')) {
 } else {
    return false;
 }
-include "./mkhtml_lib.php";
+require "./mkhtml_lib.php";
 w_readfile($s);
-//<html>
-//  <head><title>Humpi du</title>
-//  <link href="style.css" rel="stylesheet" /></head>
-//  <body>
-//    <div>
-//      <h1><?=$s</h1>
-//      <p>Funkar det här eller?</p>
-//    </div>
-//  </body>
-//</html>
+

@@ -14,10 +14,10 @@ if($honly) {
 }
 include "${lib}/head.php";
 ?>
-<div><h1><?=${self['headln']}?></h1>
+<div><h1><?=$self['headln']?></h1>
 <h3>WHORTH - The ugly duckling of FORTH</h3>
 
-<p class="ing"><?=${self['desc']}?> It will be allot of jumping back
+<p class="ing"><?=$self['desc']?> It will be allot of jumping back
 and forth in the list thou:</p>
 
 <p><ol>

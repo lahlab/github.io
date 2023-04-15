@@ -12,7 +12,7 @@ if($honly) {
 }
 include "${lib}/head.php";
 ?><div>
-<h1><?=${self['headln']}?></h1>
-<p class="ing"><?=${self['desc']}?></p>
+<h1><?=$self['headln']?></h1>
+<p class="ing"><?=$self['desc']?></p>
 </div><?php
 include "${lib}/foot.php";

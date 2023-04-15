@@ -1,6 +1,7 @@
 <?php
 if($self['unread']) {
   $self['title'] = "WHORTH - The ugly duckling of FORTH";
+  $self['tagln'] = "The WHORTH institutionalized patient for life";
   $self['headln'] = "WHORTH";
   $self['desc'] = <<<END
     WHORTH is an atempt to make a FORTH inspired language with duck typing,
@@ -9,26 +10,23 @@ if($self['unread']) {
     END;
   $self['unread'] = 0;
 }
-if($honly) {
-  return 0;
-}
+if($honly) { return 0; }
 include "${lib}/head.php";
 ?>
-<div><h1><?=${self['headln']}?></h1>
+<div><h1><?=$self['headln']?></h1>
 <h2>The ugly duckling of FORTH</h2>
-<p class="ing"><?=${self['desc']}?></p>
-<p>
-[[Vision]]: WHORTH's vision and how it relate to FORTH.
-<br>
-[[Roadmap]]: Briefly how things will progress.
-<br>
-[[Trains]]: explain WHORTH's extra parsing tricks.
-<br>
-[[Health]]: Short health background for the curious.
-<br>
-[[License]]: Got a choose a licence. MPL 2.0?
-</p>
-</div><div>
+<p class="ing"><?=$self['desc']?></p>
+<?php
+foreach(['vision', 'roadmap', 'trains', 'license'] as $sec) {
+   $k = "srcdocs/whorth/${sec}.php";
+   $i = w_readinfo($k);
+   ?><h3><?=$i['headln']?></h3>
+      <p><a class="trml" title="<?=$i['title']?>" 
+         href="<?=$sec?>.html">»</a>
+      <?=$i['desc']?></p>
+   <?php
+}
+?></div><div>
 <h3>The WHORTH institutionalized patient for life</h3>
 
 <p class="ing">As I understand things You get a cool title for life when You make a programming language. I have chosen My - that's probably not how it works... But... Hey... Everyone must agree it is an appropriate title.<a class="rml" title="read more" href="../lah.html">»</a></p>

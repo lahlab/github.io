@@ -3,13 +3,11 @@
 function w_splitpath($path) {
    $lst = explode('/', $path);
    $pf = array_shift($lst);
-   //if($pf and ($lst[0] != 'srcdocs')) {
-   //   echo "WTF:${lst[0]}\n";
-   //}
    $k = implode('/', $lst);
    $f = ['fname' => array_pop($lst), 'tags' => '', 'desc' => '',
          's' => '', 'k' => $k];
    $f['depth'] = sizeof($lst);
+   $f['root'] = $pf;
    $f['rpath'] = implode('/', array_fill(0, sizeof($lst), '..'));
    if ($f['rpath']) {
       $f['rpath'] .= '/';
@@ -24,6 +22,44 @@ function w_splitpath($path) {
    $f['headln'] = "LaHLab WHORTH project";
    $f['unread'] = 1;
    return $f;
+}
+
+function w_recdir($fpath) {
+   // List all subdirs to filepath recursely
+   $l = [];
+   foreach(glob($fpath . '*/') as $d) {
+      $l[] = $d;
+      //$ll = sizeof($l);
+      //echo "<li>$d $ll</li>\n";
+      $l = [...$l, ...w_recdir($d)];
+   }
+   //$ll = sizeof($l);
+   //echo "<li>$fpath $ll</li>\n";
+   return $l;
+}
+
+function w_fdir($fpath) {
+   // List all php files in a filepath
+   $l = [];
+   $idx = 0;
+   $i = $fpath . 'index.php';
+   foreach(glob($fpath . '*.php') as $f) {
+      if($f == $i) {
+         $l = [$f, ...$l];
+      } else {
+         $l[] = $f;
+      }
+   }
+   return $l;
+}
+
+function w_fdirs($fplst) {
+   // List all php files in all filepaths in list
+   $l = [];
+   foreach($fplst as $fpath) {
+      $l = [...$l, ...w_fdir($fpath)];
+   }
+   return $l;
 }
 
 $dict = [];
@@ -56,17 +92,5 @@ function w_readfile($path, $root='./srcdocs/', $lib='./templ') {
       $dict[$self['k']] = &$self;
    }
    return w_readself($self, $root, $lib);
-}
-
-function w_list($argv) {
-   foreach($argv as $arg) {
-      $f = w_readinfo($arg);
-      echo "${f['k']} # ${f['title']}\n";
-      echo "     Path: (${f['path']})   Rpath:(${f['rpath']})\n";
-      echo "     Hdln: ${f['headln']}\n";
-      echo "     Tags: ${f['tags']}   UnRead:${f['unread']}\n";
-      echo "     Shrt: ${f['s']}   Depth: ${f['depth']}   Desc:\n";
-      echo "${f['desc']}\n=================================\n";
-   }
 }
 
