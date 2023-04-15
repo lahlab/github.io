@@ -15,7 +15,7 @@ if($honly) {
 }
 include "${lib}/head.php";
 ?>
-<div><h1><?=${self['headln']}?></h1>
+<div><h1><?=$self['headln']?></h1>
 
 <p class="ing">WHORTH's parsing is slightly different then FORTH's. It is still word based but in addition to space it also break words on the inside of parentheses "<tt>{[()]}</tt>" and it also is aware of strings with double ticks ie: <tt>"double quotes"</tt>.</p>
 
@@ -48,13 +48,12 @@ some, text, like{, this, is, [, broken, up, ]into, words, in, the, }following(, 
 
 <h3>Format strings</h3>
 
-<p>Posfix <tt>f</tt> and <tt>F</tt> make a string format as pythons new f"{}" formatting and take the parameters from the stack with top element first. <tt>f</tt> do formatting at runtime and compile at compile time. <tt>F</tt> always do formatting so You can do formatting at compile time. You can use both <tt>f</tt> and <tt>F</tt> on the same string. Formatting of strings are nondestructive to the stack, values are read from the stack but not consumed. That make them useful to print traces as they have no side effects. It do lead to allot of drop thou. Some alternative form is thought about loosely (<tt>fl</tt>/<tt>Fl</tt> to consume a list of the stack and <tt>fd</tt>/<tt>Fd</tt> to consume a dict). Her follows an example of a format string using both <tt>f</tt> and <tt>F</tt> (orange is output):<p>
+<p>Posfix <tt>f</tt> and <tt>F</tt> make a string format as pythons new f"{}" formatting and take the parameters from the stack with top element first. <tt>f</tt> do formatting at runtime and compile at compile time. <tt>F</tt> always do formatting so You can do formatting at compile time. You can use both <tt>f</tt> and <tt>F</tt> on the same string. Formatting of strings are nondestructive to the stack, values are read from the stack but not consumed. That make them useful to print traces as they have no side effects. It do lead to allot of drop thou. Some alternative form is thought about loosely (<tt>l</tt>/<tt>L</tt> to consume a list of the stack and <tt>d</tt>/<tt>D</tt> to consume a dict). Her follows an example of a format string using both <tt>f</tt> and <tt>F</tt> (&lt;w&gt is prompt, orange is output):<p>
 
-<p><tt>"Compile time known" ":{}"<br>
-: log (i &gt;)   ."LOG: {1}{0}!"fF  drop ;   drop drop<br>
-<br>
+<p><tt>&lt;w&gt "Compiletime |" " Runtime:{}"<br>
+&lt;w&gt : log (i &gt;)   ."LOG: {1}{0}!"fF  drop ;   drop drop<br>
 &lt;w&gt; 5 log<br>
-<span class="out">LOG: Compile time known:5!</span></tt></p>
+<span class="out">LOG: Compiletime | Runtime:5!</span></tt></p>
 
 <p>It would be nice to integrate strings in train but it is not decided how as the flags kind of get in the way - leading candidate is a <tt>.</tt> (dot) to tie the train together after a string (and its flags).</p>
 
