@@ -18,7 +18,7 @@ include "${lib}/head.php";
 <p class="ing"><?=$self['desc']?></p>
 <?php
 foreach(['vision', 'roadmap', 'trains', 'license'] as $sec) {
-   $k = "srcdocs/whorth/${sec}.php";
+   $k = "$phproot/whorth/${sec}.php";
    $i = w_readinfo($k);
    ?><h3><?=$i['headln']?></h3>
       <p><a class="trml" title="<?=$i['title']?>" 

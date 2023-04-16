@@ -13,23 +13,18 @@ if($honly) {
   return 0;
 }
 include "${lib}/head.php";
-$p = $self['root'] . '/' . $self['path'];
+// $p = w_fpath($self['k']); // $self['root'] . '/' . $self['path'];
 ?><div>
 <h1><?=$self['headln']?></h1>
 <p class="ing"><?=$self['desc']?></p>
 <ul>
 <?php
-$d = [$p, ...w_recdir($p)];
-foreach(w_fdirs($d) as $k) {
-   $i = w_readinfo($k);
-   $k = $self['rpath'] . substr($k, 8, -3);
-   if('/index.' == substr($k, -7)) {
-      $k = substr($k, 0, -6);
-   } else {
-      $k = $k . 'html';
-   }
-   ?><li><b><?=$k?></b>
-   <a title="<?=$i['headln']?>" href="<?=$k?>"> <?=$i['title']?><br>
+$d = [$self['path'], ...w_recdir($self['path'])];
+foreach(w_fdirs($d) as $fpath) {
+   $i = w_readinfo($fpath);
+   $wwwpath = w_rpath($self['path'], $fpath);
+   ?><li><b><?=$wwwpath?></b>
+   <a title="<?=$i['headln']?>" href="<?=$wwwpath?>"> <?=$i['title']?><br>
     <span class="sml"><?=$i['desc']?></span></a></li>
    <?php
 }
