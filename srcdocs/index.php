@@ -15,7 +15,7 @@ if($honly) {
 include "${lib}/head.php";
 ?>
     <div>
-      <h1><?=$headln?></h1>
+      <h1><?=$self['headln']?></h1>
       <p class="ing"><?=$self['desc']?></p>
       
       <h3>WHORTH</h3>
