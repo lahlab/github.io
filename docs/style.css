@@ -2,7 +2,7 @@ html { font-family: sans-serif; margin-right: auto; margin-left: auto; }
 titel { font-size: 0.7em; color: #b0a040; margin-right: auto; margin-left: auto; }
 body { background-color: #481b18; color: #f0c080; padding: 0; margin: 0; font-size: 1.4rem; }
 div { background-color: #2d1f2d; margin: 1.1rem 1.2%; padding: 0.9rem 3.8% 0.9rem 4.6%; border: 0.1rem solid #040004; border-radius: 1rem; }
-div.toper { margin: 0 0 1.1rem 0; text-align: center; border-radius: 0; border: 0 solid #040004; border-bottom: 0.1rem solid #040004; width: auto; color: #e09060; }
+div.topper { margin: 0 0 1.1rem 0; text-align: center; border-radius: 0; border: 0 solid #040004; border-bottom: 0.1rem solid #040004; width: auto; color: #e09060; }
 @media screen and (min-width: 51.16rem) {
   body > * { margin: 1.1rem auto; }
   body > div { width: 44rem; margin: 1.1rem auto; padding: 0.9rem 2.2rem 0.7rem 2.8rem; } }
