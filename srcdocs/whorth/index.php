@@ -21,7 +21,7 @@ foreach(['vision', 'roadmap', 'trains', 'license'] as $sec) {
    $k = "$phproot/whorth/${sec}.php";
    $i = w_readinfo($k);
    ?><h3><?=$i['headln']?></h3>
-      <p><a class="trml" title="<?=$i['title']?>" 
+      <p><a class="rml" title="<?=$i['title']?>" 
          href="<?=$sec?>.html">»</a>
       <?=$i['desc']?></p>
    <?php
@@ -29,7 +29,7 @@ foreach(['vision', 'roadmap', 'trains', 'license'] as $sec) {
 ?></div><div>
 <h3>The WHORTH institutionalized patient for life</h3>
 
-<p class="ing">As I understand things You get a cool title for life when You make a programming language. I have chosen My - that's probably not how it works... But... Hey... Everyone must agree it is an appropriate title.<a class="rml" title="read more" href="../lah.html">»</a></p>
+<p class="ing">As I understand things You get a cool title for life when You make a programming language. I have chosen My - that's probably not how it works... But... Hey... Everyone must agree it is an appropriate title.<a class="trml" title="read more" href="../lah.html">»</a></p>
 
 <p><b>This just got started!<b></p>
 </div><?php

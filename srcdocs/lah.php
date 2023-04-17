@@ -29,7 +29,7 @@ include "${lib}/head.php";
         long with sleep apnea. After getting a C-PAP to sleep with I have
         steadily improved but allot of hard work still to do.</p>
         
-      <p><a class="rml" title="read more" href="./">»</a>Go back to the
+      <p><a class="trml" title="read more" href="./">»</a>Go back to the
       start page</p>
     </div><?php
 include "${lib}/foot.php";

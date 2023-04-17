@@ -1,7 +1,7 @@
 <?php
 if($self['unread']) {
   $self['title'] = "LaHLab sitemap";
-  $self['headln'] = "LaHLab sitemap";
+  $self['headln'] = "LaHLab sitemap ᚠᚢᚦᚨᚬᚱᚴᚼᚾᛁᛅᛋᛏᛒᛘᛚᛦ";
   $self['desc'] = <<<END
     List of all the pages at lahlab.github.io - Mostly for internal use
     when organizing the site. Every HTML page on the site end up here

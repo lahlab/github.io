@@ -42,9 +42,25 @@ to fix).</p>
 
 <p class="ing">Probably I'm overthinking this. WHORTH has the goal to be a simple language, even a small team should be able to reimplement it from scratch quite fast making any licensing issues quite solvable.</p>
 
-<h3>Readline</h3>
+<h2>a Rune license</h2>
 
-<p>WHORTH currently use readline in python that may (depending on how Your python is compiled) be GPL code. That's no problem for now as WHORTH are only for play (it may bee no problem at all as there are alternative implementations - ask someone else). In the long run writing similar functionality in WHORTH is probably a good idea anyway to bring the functionality wherever WHORTH go.</p>
+<p>Don't really like an athority desiding on a new license. A licens should be like runes - You carv them in to stone, slap them on and dont worry about it anymore. Reality might not be that easy but maybe one can come close.</p>
+
+<ul>
+<li><b class="big">ᛁᚠᚱᛁ (LFRL)</b> Lesser Free Rune License. Compatible
+with *GPL ala MPL but also allow relicensing to FRL to maintain 'terror' balance.</li>
+
+<li><b class="big">ᚠᚱᛁ (FRL)</b> Free Rune License. Like MPL but don't
+allow relicensing to *GPL. *GPL is incompatible with this license (not
+the other way around - it's all FSF's problem).</li>
+
+<li><b class="big">ᚴᚠᚱᛁ (CFRL)</b> Contaguse Free Rune License. Like FRL
+but demand all other files in a combined work must be released as source under a free/open source lisence aproved by OSI or FSF. (K rune chosen as it's an hard C).</li>
+</ul>
+
+<p>Just throw this in here to not forget werry loos ideas of a
+uncentraliced lisence upgrade schema... some notes to self: Anonsed transfeer state. 6/3 Year. Interim usage if needed. backlicensing during transfeer state. Simularity demand.</p>
+
 </div><?php
 include "${lib}/foot.php";
 
