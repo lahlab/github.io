@@ -27,8 +27,8 @@ a { text-decoration: none; color: #70a0ff; }
 a:visited { color: #9070b0; }
 a:hover { color: #a0c0ff; }
 
-a.rml { float: right; margin: -1.6rem -2.6rem 0 0 ; padding: 0 1.2rem; font-size: 4.5rem; font-weight: bold; line-height: 1; }
-a.trml { float: right; margin: -1.2rem -2.6rem 0 0 ; padding: 0 1.2rem; font-size: 4.5rem; font-weight: bold; line-height: 1; }
+a.rml { float: right; margin: -1.6rem -2.0rem 0 0 ; padding: 0 1.2rem; font-size: 4.5rem; font-weight: bold; line-height: 1; }
+a.trml { float: right; margin: -1.2rem -2.0rem 0 0 ; padding: 0 1.2rem; font-size: 4.5rem; font-weight: bold; line-height: 1; }
 
 a.foot { margin: 0 0.5rem; padding: 0 0.5rem; font-size: 2.4rem; font-weight: bold; line-height: 1.8; }
 
@@ -36,7 +36,7 @@ a.foot { margin: 0 0.5rem; padding: 0 0.5rem; font-size: 2.4rem; font-weight: bo
 
 p.ing { font-size: 1.5rem; margin: 1.2rem 0; }
 p.ing::first-line { font-size: 1.5rem; }
-p.ing::first-letter { float: left; margin: -0.4rem 0.16rem 0.16rem -1.2rem; padding: 0.4rem 0.4rem 0.3rem 0.4rem; font-size: 4rem; font-weight: bold; color: #ff9060; line-height: 0.82; background-color: #463646; border-radius: 1rem; border: 0.05rem solid #100810; }
+p.ing::first-letter { float: left; margin: -0.4rem 0.16rem 0.16rem -3%; padding: 0.4rem 0.4rem 0.3rem 0.4rem; font-size: 4rem; font-weight: bold; color: #ff9060; line-height: 0.82; background-color: #463646; border-radius: 1rem; border: 0.05rem solid #100810; }
 
 :is(h1, h2, h3) + p.ing { margin-top: 0.6rem; }
 
