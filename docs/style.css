@@ -1,11 +1,10 @@
 html { font-family: sans-serif; margin-right: auto; margin-left: auto; }
-titel { font-size: 0.7em; color: #b0a040; margin-right: auto; margin-left: auto; }
 body { background-color: #481b18; color: #f0c080; padding: 0; margin: 0; font-size: 1.3rem; }
 
 div { background-color: #2d1f2d; margin: 1.1rem 1.2%; padding: 0.9rem 3.8% 0.9rem 4.6%; border: 0.1rem solid #040004; border-radius: 2rem; }
 div.topper { margin: 0 0 0.5rem 0; text-align: center; border-radius: 0; border: 0 solid #040004; padding: 0.3rem; border-bottom: 0.1rem solid #040004; width: auto; color: #e09060; }
 
-@media screen and (min-width: 51.16rem) {
+@media (min-width: 51.16rem) {
   body > * { margin: 1.1rem auto; }
   body > div { width: 44rem; margin: 1.1rem auto; padding: 0.9rem 1.8rem 0.7rem 2.8rem; } }
 
@@ -14,7 +13,7 @@ h2 { font-size: 1.6rem; margin-top: 1.8rem; margin-bottom: 0; letter-spacing: 0.
 h3 { font-size: 1.45rem; margin-top: 1.6rem; margin-bottom: 0; letter-spacing: 0.01rem; word-spacing: 0.05rem; line-height: 0.95; color: #ff9060; }
 
 p { margin: 1rem 0; padding: 0; line-height: 1.3; letter-spacing: 0.01em; word-spacing: 0.03em; }
-li { margin: 0.5em 0; padding: 0; line-height: 1.2; letter-spacing: 0.01em; word-spacing: 0.03em; }
+li { margin: 0.7rem 0; padding: 0; line-height: 1.2; letter-spacing: 0.01em; word-spacing: 0.03em; }
 p.foot { text-align: center; }
 
 tt { font-size: 1.1rem; color: #60b818; }

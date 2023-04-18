@@ -7,6 +7,7 @@ if(!array_key_exists('tagln', $self)) {
    $self['tagln'] = "WHORTH - the ugly duckling of FORTH"; }
 ?><head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?=$self['title']?></title>
 <link href="<?=$self['rpath']?>style.css" rel="stylesheet">
 </head>
