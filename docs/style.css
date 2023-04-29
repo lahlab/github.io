@@ -1,12 +1,14 @@
 html { font-family: sans-serif; margin-right: auto; margin-left: auto; }
 body { background-color: #481b18; color: #f0c080; padding: 0; margin: 0; font-size: 1.3rem; }
 
-div { background-color: #2d1f2d; margin: 1.1rem 1.2%; padding: 0.9rem 3.8% 0.9rem 4.6%; border: 0.1rem solid #040004; border-radius: 2rem; }
+div { background-color: #2d1f2d; margin: 0.6rem 1.2%; padding: 0.9rem 3.8% 0.9rem 4.6%; border: 0.1rem solid #040004; border-radius: 2rem; }
+img { width: 100%; margin: 0.6rem 0 0.3rem 0; border: 0.1rem solid #040004; border-right: 0; border-left: 0; }
 div.topper { margin: 0 0 0.5rem 0; text-align: center; border-radius: 0; border: 0 solid #040004; padding: 0.3rem; border-bottom: 0.1rem solid #040004; width: auto; color: #e09060; }
 
 @media (min-width: 51.16rem) {
-  body > * { margin: 1.1rem auto; }
-  body > div { width: 44rem; margin: 1.1rem auto; padding: 0.9rem 1.8rem 0.7rem 2.8rem; } }
+  body > * { margin: 0.6rem auto; }
+  body > img { margin: 0.6rem 0 0.3rem 0; }
+  body > div { width: 44rem; margin: 0.6rem auto; padding: 0.9rem 1.8rem 0.7rem 2.8rem; } }
 
 h1 { font-size: 1.9rem; margin-top: 2.2rem; margin-bottom: 0; letter-spacing: 0.02rem; word-spacing: 0.06rem; line-height: 0.95; color: #ff9060; }
 h2 { font-size: 1.6rem; margin-top: 1.8rem; margin-bottom: 0; letter-spacing: 0.02rem; word-spacing: 0.06rem; line-height: 0.95; color: #ff9060; }
@@ -39,6 +41,8 @@ p.ing::first-line { font-size: 1.5rem; }
 p.ing::first-letter { float: left; margin: -0.4rem 0.16rem 0.16rem -3%; padding: 0.4rem 0.4rem 0.3rem 0.4rem; font-size: 4rem; font-weight: bold; color: #ff9060; line-height: 0.82; background-color: #463646; border-radius: 1rem; border: 0.05rem solid #100810; }
 
 :is(h1, h2, h3) + p.ing { margin-top: 0.6rem; }
+
+:is(div, img) + :is(div, img) { margin-top: 0; }
 
 body > *:last-child { margin: 0; padding: 0.5rem 1.2rem; border: 0 solid #040004; border-top: 0.1rem solid #040004; width: auto; border-radius: 0; }
 

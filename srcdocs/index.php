@@ -17,7 +17,9 @@ include "${lib}/head.php";
     <div>
       <h1><?=$self['headln']?></h1>
       <p class="ing"><?=$self['desc']?></p>
-      
+    </div>
+    <img src="/bloom.jpg">
+    <div>
       <h3>WHORTH</h3>
       <p><a class="rml" title="read more" href="whorth/">»</a> WHORTH is
       a new take on FORTH still in early design fase. The majore
